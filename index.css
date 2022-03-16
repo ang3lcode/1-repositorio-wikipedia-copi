@@ -1,0 +1,321 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+a {
+    text-decoration: none;
+}
+header {
+    font-size: 1.6rem;
+}
+header .encabezado{
+    /* border: 1px solid #36c;    */
+    margin: 50px auto 0 auto;
+    width: 80%;
+    height: 10vh;
+    
+}
+header div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header div .wikipedia {
+    background-image: url("https://famfonts.com/wp-content/uploads/wikipedia-wide.png");
+    background-repeat: no-repeat; /*para que no se repita la imagen */
+    background-position: center;
+    background-size: contain; /*para que se aproxime al tamaño del contenedor*/
+    width: 18rem;
+    height: 4rem;    
+}
+
+header .main {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    width: 80%;
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header div .primera {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+}
+header div .primera div {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 20vw;
+    height: 5vh;
+}
+
+header div .primera div a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    cursor: pointer;
+}  
+header div .segunda {
+    font-size: 1.4rem;
+    height: 36vh;
+    display: flex;
+    flex-direction: row;    
+    width: 100%;
+}
+header div .segunda a {
+    font-size: 1.6rem;
+}
+header div .segunda .fila-uno{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    height: 100%vh;      
+}
+header div .segunda .fila-uno .max {
+    margin-right: 3rem;
+}
+
+header div .segunda picture {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/Wikipedia-logo-v2.svg/1200px-Wikipedia-logo-v2.svg.png");
+    background-repeat: no-repeat; /*para que no se repita la imagen */
+    background-position: center;
+    background-size: contain; /*para que se aproxime al tamaño del contenedor*/
+    width: 40%;
+    height: 100%;  
+}
+header div .segunda .fila-dos{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    height: 100%vh;
+}
+header div .segunda .fila-dos .max {    
+    margin-left: 3rem;
+}
+header div .final {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;    
+    width: 100%;
+}
+header div .final div {
+    font-size: 1.2rem;
+    text-align: center;
+    width: 20vw;
+    height: 5vh;
+}
+header div .final div a{
+    font-size: 1.6rem;
+    text-decoration: none;
+    cursor: pointer;
+} 
+
+
+header a {
+    font-weight: bold;
+    color: #36c;;
+}
+
+
+
+@media (min-width: 700px) {
+    header .main {
+        /* border: 2px solid skyblue; */
+        margin: 0 auto;
+        width: 600px;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+    }
+  }
+
+  header .search {
+    border-bottom: 2px solid skyblue;
+    margin: 0 auto;
+    width: 90%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+header .search div {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    border: 2px solid #36c;
+    width: 450px;
+    height: 40px;
+    /* border: none; */
+    outline: none;
+}
+header .search div input{
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    width: 400px;
+    height: 30px;
+}
+
+header .search .iconos {
+    background-color: #36c;
+    background-image: 
+    url('https://cdn0.iconfinder.com/data/icons/google-material-design-3-0/48/ic_search_48px-512.png');
+    background-repeat: no-repeat; /*para no repetir la imagen*/
+    background-position: center; 
+    background-size: contain;   
+    width: 40px;
+    height: 40px;
+    
+}
+
+header .search select {
+    width: 20px;
+    outline: none;
+    border: none;
+    background: transparent;
+}
+
+header .search button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px ;
+    border: 2px solid blue;
+    position: relative;
+    color: #36c;
+    margin: 20px;
+    width: 260px;
+    height: 35px;
+    border: 1px solid #a2a9b1;
+    outline: 1.6rem solid #fff;
+    transition: outline-width .1s ease-in .5s;
+    font-weight: 700;
+    line-height: 1;
+}
+
+header .search button img {
+    background-image: url('https://e7.pngegg.com/pngimages/835/157/png-clipart-translation-computer-icons-google-translate-dictionary-language-google-translate-text-logo.png');
+    background-repeat: no-repeat; /*para no repetir la imagen*/
+    background-position: center; 
+    background-size: contain; 
+    border: none;
+    margin-right: 20px;
+    width: 22px;
+    height: 22px;
+}
+
+header .search button select {
+    padding-right: 20px;
+}
+
+
+
+
+
+.links-list {
+    display: grid;
+    grid-template-columns: repeat(4, 230px);
+    grid-gap: 4em 0;
+    margin: 2em auto 0;
+    justify-content: space-evenly;
+}
+.links-list-item {
+    display: flex;
+    align-items: center;
+
+}
+.links-list-item img {
+    width: 45px;
+    height: 45px;
+    vertical-align: top;
+    flex: 0 0;
+}
+.links-list-item .item-detail {
+    margin-left: 1em;
+    flex: 1 1;
+}
+.item-detail p {
+    margin: 0.3em 0 0;
+    font-size: 1.1em;
+}
+.links-list-item:nth-of-type(2) {
+    grid-column: 1;
+    grid-row: 2 / span 3;
+    background-color: var(--gray-background-color);
+    padding: 1em;
+}
+.links-list-item:nth-of-type(2) a {
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .links-list {
+        display: grid;
+        grid-template-columns: repeat(4, 124px);
+        grid-gap: 4em 0;
+        margin: 2em auto 0;
+        justify-content: space-evenly;
+    }
+    .links-list-item:nth-of-type(1) {
+        grid-column: 1 / span 4;
+        grid-row: 1;
+        flex-direction: column;
+        align-items: center;
+    }
+    .links-list-item:nth-of-type(2) {
+        grid-column: 1 / span 4;
+        grid-row: 6;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+    
+}
+
+
+
+
+
+
+
+  
+  
+footer {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: -60rem;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    /* background-color: #f2f2f2; */
+    border-top: 1px solid #e4e4e4; 
+}
+footer p {
+    display: flex
+}
+footer ul {
+    margin: 1px;
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+footer ul li a {
+    margin: 10px;
+    color: #5f6368;
+}
